@@ -3,7 +3,7 @@ Rails.application.routes.draw do
 
   get '/:name', controller: "welcome", action: "show"
 
-  get '/lorem/ipsum', controller: "welcome", action: "lorem"
+  get '/lorem/:type', controller: "welcome", action: "lorem"
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
